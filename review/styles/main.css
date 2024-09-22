@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --title-font: 'Lora';
+    --paragraph-font: Helvetica, Arial, sans-serif;
+
+}
+
+body{
+    font-family: var(--paragraph-font);
+    text-align: center;
+    text-decoration: none;
+
+}
+
+h1{
+    font-family: var(--title-font);
+    text-align: center;
+    font-size: 4em;
+
+}
+
+h1 a{
+    text-decoration: none;
+    color: #333;
+}
+
+nav{
+    text-align: center;
+    font-size: 1.5em;
+    list-style-type: none;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: #666;
+}
+
+li{
+    list-style: none;
+}
+
+
+h2 a{
+    text-decoration: none;
+    color: #666;
+}
+
+
+@media screen and (min-width: 700px) {
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
