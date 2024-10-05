@@ -4,11 +4,25 @@
     $form-background-color: white;
     $input-color: white;
     $headlines-color : white;
+    $small-breakpoint: 50em;
+
+    :root{
+        --background-color: #{$body-background-color};
+    }
 
     body{
-        background-color: $body-background-color;
+        background-color: var(--background-color, red);
+        margin: 0;
     }
 
     form{
         background-color: $form-background-color;
+
     }
+
+    @media screen and (min-width: $small-breakpoint) { 
+        body{
+            --background-color: blue;
+        }
+
+    } 

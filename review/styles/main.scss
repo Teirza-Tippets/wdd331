@@ -1,0 +1,76 @@
+// Importing Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+// Variables for fonts and colors
+$primary-color: #333;
+$secondary-color: #666;
+$title-font: 'Lora';
+$paragraph-font: Helvetica, Arial, sans-serif;
+
+:root {
+    --title-font: $title-font;
+    --paragraph-font: $paragraph-font;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    text-align: center;
+    text-decoration: none;
+    padding-right: 3rem;
+}
+
+h1 {
+    font-family: var(--title-font);
+    text-align: center;
+    font-size: 4em;
+    padding-bottom: 2.5rem;
+
+    a {
+        text-decoration: none;
+        color: $primary-color;
+    }
+}
+
+nav {
+    text-align: center;
+    font-size: 1.5em;
+    list-style-type: none;
+
+    a {
+        text-decoration: none;
+        color: $secondary-color;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+
+h2 {
+    a {
+        text-decoration: none;
+        color: $secondary-color;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+}
+
+// Media queries
+@media screen and (min-width: 700px) {
+    nav ul {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    nav li {
+        margin-left: 1rem;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
